@@ -51,6 +51,7 @@ ul {
   --social-footer-color: #ffffff;
   --footer-subtitle-color: #ffffff;
   --pfolio-top-text-color: #f4f4fd;
+  --modal-title-text:#2E2F42;
 
   /* background colors */
   --main-background: #ffffff;
@@ -715,11 +716,65 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: scale;
 }
 
 .modal-icon{
   display: block;
     margin: 0 auto;
     text-align: center;
+}
+
+.modal-title{
+  color: var(--modal-title-text);
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 48px;
+  margin-bottom: 14px;
+}
+
+/* .modal-form{
+
+} */
+
+.modal-input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 26px;
+
+}
+
+/* .modal-input-text{
+  margin-bottom: 4px;
+} */
+
+.modal-input-text span{
+font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.modal-input::placeholder{
+font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-btn{
+  width: 169px;
+  height: 56px;
+  color: var(--hero-btn-color);
+  background-color: var(--hero-btn-background);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+  padding: 16px 32px;
 }
