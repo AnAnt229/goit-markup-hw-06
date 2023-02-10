@@ -375,10 +375,31 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe">
+          <p class="footer-soc-subtitle">Social media</p>
+          <form class="email-form">
+            <input 
+            class="sub-email"
+            name="sub-email"
+            type="email"
+            placeholder="E-mail"
+            />
+            <div class="footer-subs">
+              <button class="btn sub-btn">Subscribe
+              <!-- <span class="icon-footer-email"></span> -->
+                <svg class="footer-subs-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-subs"></use>
+              </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close type="button">
           <svg class="modal-icon" width="8" height="8">
@@ -425,8 +446,21 @@
           </div>
           
           <div class="modal-field">
-            <LAbel></LAbel>
-            <input type="radio">
+            
+            <input 
+            class="modal-check visually-hidden"
+            id="policy"
+            name="policy"
+            type="checkbox"
+            value="true"
+            required
+            />
+            <LAbel for="policy" class="check-text">
+              <span>
+                <svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span> I accept the terms and conditions of the <a href="#" class="check-link"> Privacy Policy</a></LAbel>
           </div>
 
           <div class="center-btn"><button type="submit" class="modal-btn">Send</button></div>
